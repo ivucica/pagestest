@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.pink-indigo.min.css">
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+      .ivucica-mdl .section--center {
+      max-width: 860px;
+      }
+      .ivucica-mdl .mdl-layout__header-row{padding-left:40px;height:53px;}
+      .ivucica-mdl .mdl-card__supporting-text + .mdl-card__actions {
+      border-top: 1px solid rgba(0,0,0,0.12);
+      }
+      .ivucica-mdl .mdl-card__actions {
+      margin: 0; padding: 4px 40px; color: inherit;
+      }
+      .ivucica-mdl .mdl-card__actions a {
+      color: #00BCD4;
+      }
+      .ivucica-mdl .mdl-layout__content section { /* :not(:last-of-type) */
+      position: relative;
+      margin-bottom: 48px;
+      }
+      .ivucica-mdl section > button {
+      position: absolute;
+      z-index: 99;
+      top: 8px;
+      right: 8px;
+      }
+      main > .mdl-layout__tab-panel {
+      padding: 8px;
+      padding-top: 48px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary"><!-- header -->
+	<div class="mdl-layout--large-screen-only mdl-layout__header-row">
+	</div>
+
+	<div class="mdl-layout__header-row"><!-- header row -->
+	  <h3>Ivan Vucica's pagestest</h3>
+	<!-- end header row --></div>
+
+	<div class="mdl-layout--large-screen-only mdl-layout__header-row">
+	</div>
+
+	<div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+	  <a href="#secmain" class="mdl-layout__tab is-active">Main</a>
+	  <a href="#secextra" class="mdl-layout__tab">Extra</a>
+	</div>
+	
+      </header>
+
+      <div class="mdl-layout__drawer">
+	<span class="mdl-layout-title">Ivan V</span>
+	<nav class="mdl-navigation">
+	  <a href="#secmain" class="mdl-navigation__link">Main</a>
+	  <a href="#secextra" class="mdl-navigation__link">Extra</a>
+	</nav>
+      </div>
+
+
+      <main class="mdl-layout__content">
+	<div class="mdl-layout__tab-panel is-active" id="secmain">
+	  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+	    <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--yellow-500 mdl-color-text--white">
+	      <!-- <i class="material-icons">play_circle_filled</i> -->
+	      <span prop="image" property="depiction image p:image"><img class="photo" itemprop="image" src="//www.gravatar.com/avatar/9dd37fe19111e25842a4fd0aea245d1a?s=256" alt="The Gravatar"></span>
+	    </header>
+	    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+	      <div class="mdl-card__supporting-text">
+		<h3 class="mdl-layout-title">{{ page.title }}</h3>
+		
+		{{ content }}
+	      </div>
+	    </div>
+	  </section>
+	</div>
+
+	<div class="mdl-layout__tab-panel" id="secextra">
+	  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+	    <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--yellow-500 mdl-color-text--white">
+	      Woot.
+	    </header>
+	    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+	      <div class="mdl-card__supporting-text">
+		<h3 class="mdl-layout-title">This is some title</h3>
+		This is some extra content.
+	      </div>
+	    </div>
+	  </section>
+	</div>
+      </main>
+
+
+      <footer class="mdl-mega-footer">
+	<div class="mdl-mega-footer--middle-section">
+	  <div class="mdl-mega-footer--drop-down-section">
+	    <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+	    <h1 class="mdl-mega-footer--heading">Random links</h1>
+	    <ul class="mdl-mega-footer--link-list">
+	      
+	      <li><a href="http://☠.vucica.net/">http://☠.vucica.net/</a></li><li><a href="http://c̀.vucica.net/">http://c̀.vucica.net/</a></li>
+	    </ul>
+	  </div>
+	</div>`
+	
+	<div class="mdl-mega-footer--bottom-section">
+	  <div class="mdl-logo">
+	    &copy; 2006 ivan vucica - ivan.vucica.net
+	  </div>
+	  <ul class="mdl-mega-footer--link-list">
+	    <li><a href="#">:)</a></li>
+	  </ul>
+	</div>
+      </footer>
+      
+    </div>
+  </body>
+</html>
