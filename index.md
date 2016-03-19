@@ -1,6 +1,6 @@
 ---
 title: Opening page
-layout: post
+layout: default
 ---
 
 # Hello world
