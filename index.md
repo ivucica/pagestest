@@ -13,3 +13,7 @@ This is a test of gh-pages.
 * {{ post.date | date_to_string }} -- [{{ post.title}}]({{ site.url }}{{ post.url }})
 {% endfor %}
 
+## Pages
+{% for page in site.pages %}
+* [{{ page.title }}]({{ site.url }}{{page.url}})
+{% endfor %}
